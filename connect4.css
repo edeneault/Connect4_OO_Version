@@ -2,447 +2,474 @@
 
 /* ELEMENTS */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0px auto;
-  padding: 0px 0px;
-  z-index: 0;
-  color: #666666;
-  background-image: url("dragon.jpg");
-  background-color: rgba(0, 0, 0, 0);
-	background-position: top;
-	background-repeat: no-repeat;
-  background-size: containh;
-  /* margin-top: 70px; */
-  min-height: 500px;
-  /* min-width: 100%; */
- }
- 
- nav {
-  background:linear-gradient(  to bottom, rgba(0,0,0,0.7), 70%, rgba(0,0,0,0)); 
+    margin: 0px auto;
+    padding: 0px 0px;
+    z-index: 0;
+    color: #666666;
+    background-image: url("dragon.jpg");
+    background-color: rgba(0, 0, 0, 0);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin-top: 70px; */
+    min-height: 500px;
+    /* min-width: 100%; */
+}
+
+nav {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), 70%, rgba(0, 0, 0, 0));
 }
 
 
 /* CLASSES */
 
 .scoreboard-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1rem;
 }
 
- .game-container {
-  max-width: 100%;
+.game-container {
+    max-width: 100%;
 }
 
 .intro-container {
-  border-radius: .5rem;
-  align-items: center;
-	color: black;
-	align-items: center;
-	color: white;
-	text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  font-family: Bangers, sans-serif;
-	text-align: center;
-	transition: opacity 1s;
-  opacity: 1;
+    border-radius: .5rem;
+    align-items: center;
+    color: black;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: Bangers, sans-serif;
+    text-align: center;
+    transition: opacity 1s;
+    opacity: 1;
 }
 
 .end-container {
-  margin: 0 auto;
-  border-radius: .5rem;
-  align-items: center;
-	color: black;
-	align-items: center;
-	color: white;
-	text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  font-family: Bangers, sans-serif;
-	text-align: center;
-  opacity: 1;
+    margin: 0 auto;
+    border-radius: .5rem;
+    align-items: center;
+    color: black;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: Bangers, sans-serif;
+    text-align: center;
+    opacity: 1;
 }
-  
+
 .jumbotron {
-  margin: 0px auto;
-  background: rgba(0, 0, 0, 0);
-  min-height: 300px;
-  padding-bottom: 10px; 
+    margin: 0px auto;
+    background: rgba(0, 0, 0, 0);
+    min-height: 300px;
+    padding-bottom: 10px;
 }
 
 .footer {
-  position: relative; 
-  clear:both;
-  padding-top:20px;
-} 
+    position: relative;
+    clear: both;
+    padding-top: 20px;
+}
 
 .btn {
-  border: none;
-  outline: none;
-  overflow: hidden;
-  cursor: pointer;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .btn-warning {
-  background-color: rgba(240, 173, 78, 100%);
-  outline: none;
+    background-color: rgba(240, 173, 78, 100%);
+    outline: none;
 }
 
 .btn-danger {
-  background-color: rgba(217, 83, 79, 100%);
-  outline: none;
+    background-color: rgba(217, 83, 79, 100%);
+    outline: none;
 }
+
 .btn-danger:focus {
-  outline: none;
-  border: none;
+    outline: none;
+    border: none;
 }
+
 .btn-warning:focus {
-  outline: none;
-  border: none;
+    outline: none;
+    border: none;
 }
+
 .msg {
-  font-size: 5rem;
-  animation: fade-in 2s;
+    font-size: 5rem;
+    animation: fade-in 2s;
 }
+
 .msgIntro {
-  font-size: 3rem;
-  animation: fade-in 2s;
+    font-size: 3rem;
+    animation: fade-in 2s;
 }
+
 .title {
-  font-size: 5rem;
-	font-weight: bold;
-	align-items: center;
-	text-align: center;
-	margin: auto 0px;
-	color: rgba(245, 159, 0, 0.8);
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  font-family: Bangers;
+    font-size: 5rem;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    margin: auto 0px;
+    color: rgba(245, 159, 0, 0.8);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: Bangers;
 }
 
 .four {
-  font-size: 7rem;
+    font-size: 7rem;
 }
 
 .scoreboard {
-  font-size: 2rem;
-	font-weight: bold;
-	align-items: center;
-	text-align: center;
-  margin: auto 0px;
-  border-radius: 1rem;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(217, 83, 79, 90%);;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  font-family: Bangers, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    margin: auto 0px;
+    border-radius: 1rem;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(217, 83, 79, 90%);
+    ;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: Bangers, sans-serif;
 }
-    
+
 .logo {
-  font-size: 3rem;
-	font-weight: bold;
-	align-items: center;
-	text-align: center;
-	margin: auto 0px;
-	color: rgba(245, 159, 0, 0.8);
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  font-family: Bangers, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    margin: auto 0px;
+    color: rgba(245, 159, 0, 0.8);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-family: Bangers, sans-serif;
 }
 
 .nav-text {
-  color: rgb(217, 83, 79);
-  font-size: 3rem; 
+    color: rgb(217, 83, 79);
+    font-size: 3rem;
 }
 
 .gamePiece {
-  position: absolute;
-  top: 0px;
-  margin: 10%;
-  align-items: center;
-  width: 80%;
-  height: 80%;
-  border-radius: 100%;
-  border: solid 1px black;
-  animation: vert-slide-in 1s;
-  z-index: 99 !important;
+    position: absolute;
+    top: 0px;
+    margin: 10%;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    border: solid 1px black;
+    animation: vert-slide-in 1s;
+    z-index: 99 !important;
 }
 
 .star {
-  font-size: 3rem;
-  text-align: center;
-  color: white;
-  padding-top: 0.3rem;
-  animation: star-spin 1s;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding-top: 0.3rem;
+    animation: star-spin 1s;
 }
 
 /* Eye Ball CSS adapted from the code in the following article: https://cssanimation.rocks/spheres/ */
 
 .ball {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  border-radius: 50%;
-  position: relative;
-  background: radial-gradient(circle at 50% 40%, #ebebeb, #c2c2c2 66%, #9b5050 100%);
-  background-color: rgba(240, 173, 78, 100%);
-  animation: glow 2.5s linear infinite alternate;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 40%, #ebebeb, #c2c2c2 66%, #9b5050 100%);
+    background-color: rgba(240, 173, 78, 100%);
+    animation: glow 2.5s linear infinite alternate;
 }
 
-@keyframes glow{
-  to {
-    box-shadow: 0px 0px 10px 5px rgba(217, 83, 79, 100%);
-  }
+@keyframes glow {
+    to {
+        box-shadow: 0px 0px 10px 5px rgba(217, 83, 79, 100%);
+    }
 }
 
 .ball:after {
-  content: "";
-  position: absolute;
-  top: 5%;
-  left: 10%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
-  transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+    transform: translateX(-80px) translateY(-90px) skewX(-20deg);
 }
 
 .iris {
-  width: 40%;
-  height: 40%;
-  margin: 30%;
-  border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, #208ab4 0%, #6fbfff 30%, #4381b2 100%);
-  transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
-  position: absolute;
-  animation: move-eye-skew 5s ease-out infinite;
+    width: 40%;
+    height: 40%;
+    margin: 30%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, #208ab4 0%, #6fbfff 30%, #4381b2 100%);
+    transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+    position: absolute;
+    animation: move-eye-skew 5s ease-out infinite;
 }
+
 .iris:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 37.5%;
-  height: 37.5%;
-  border-radius: 50%;
-  top: 31.25%;
-  left: 31.25%;
-  background: black;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 37.5%;
+    height: 37.5%;
+    border-radius: 50%;
+    top: 31.25%;
+    left: 31.25%;
+    background: black;
 }
+
 .iris:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 31.25%;
-  height: 31.25%;
-  border-radius: 50%;
-  top: 18.75%;
-  left: 18.75%;
-  background: rgba(255, 255, 255, 0.2);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 31.25%;
+    height: 31.25%;
+    border-radius: 50%;
+    top: 18.75%;
+    left: 18.75%;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .stage {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  bottom: 14%;
-  left: 17%;
-  margin: 20px;
-  perspective: 400px;
-  perspective-origin: 50% 50%;
-  transform-style: preserve-3d;
-  transform: rotateY(0.01deg);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 14%;
+    left: 17%;
+    margin: 20px;
+    perspective: 400px;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform: rotateY(0.01deg);
 }
 
 .container-animation {
-  max-width: 100%;
-  min-height: 550px;
-  position: relative;
-  opacity: 1;
-  background-image: url("footer-dragon.png");
-	background-position: left;
-	background-repeat: no-repeat;
-	background-size: cover;
+    max-width: 100%;
+    min-height: 550px;
+    position: relative;
+    opacity: 1;
+    background-image: url("footer-dragon.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .eyeball {
-  position: relative;
-  min-height: 400px;
-  margin: 0px auto;
+    position: relative;
+    min-height: 400px;
+    margin: 0px auto;
 }
 
 /* ID'S */
 
 #board td {
-  position: relative;
-  width: 100px;
-  height:100px;
-  margin: 0px;
-  padding: 0px;
-  border-radius: 10rem;
-  border: solid 10px rgb(255, 255, 255);
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10rem;
+    border: solid 10px rgb(255, 255, 255);
 }
 
 #column-top td {
-  position: relative;
-  border: solid 5px rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 100px;
-  height:100px;
-  margin: 0px;
-  border-radius: 3px;
+    position: relative;
+    border: solid 5px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    border-radius: 3px;
 }
 
 #column-top td:hover {
-  background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 #board {
-  max-width: 70%;
-  position: relative;
-  overflow: hidden;
-  border-radius: .5rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  animation: fade-in 2s;
+    max-width: 70%;
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    animation: fade-in 2s;
 }
 
 #current-time {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 
 /* KEYFRAMES FOR ANUMATIONS */
 @keyframes move-eye-skew {
-  0% {
-    transform: none;
-  }
-  20% {
-    transform: translateX(-13px) translateY(6px) skewX(15deg) skewY(-10deg) scale(0.95);
-  }
-  25%, 44% {
-    transform: none;
-  }
-  50%, 60% {
-    transform: translateX(13px) translateY(-6px) skewX(5deg) skewY(2deg) scaleX(0.95);
-  }
-  66%, 100% {
-    transform: none;
-  }
+    0% {
+        transform: none;
+    }
+
+    20% {
+        transform: translateX(-13px) translateY(6px) skewX(15deg) skewY(-10deg) scale(0.95);
+    }
+
+    25%,
+    44% {
+        transform: none;
+    }
+
+    50%,
+    60% {
+        transform: translateX(13px) translateY(-6px) skewX(5deg) skewY(2deg) scaleX(0.95);
+    }
+
+    66%,
+    100% {
+        transform: none;
+    }
 }
 
 @keyframes vert-slide-in {
-  0% {
-		transform: translate(0, -2000%);
-	}
-	50% {
-		transform: translate(0, 0);
-	}
-	65% {
-		transform: translate(0, -35px);
-	}
-	75% {
-		transform: translate(0, 0px);
-	}
-	85% {
-		transform: translate(0, -15px);
-	}
-	90% {
-		transform: translate(0, 0px);
-	}
-	95% {
-		transform: translate(0, -5px);
-	}
+    0% {
+        transform: translate(0, -2000%);
+    }
+
+    50% {
+        transform: translate(0, 0);
+    }
+
+    65% {
+        transform: translate(0, -35px);
+    }
+
+    75% {
+        transform: translate(0, 0px);
+    }
+
+    85% {
+        transform: translate(0, -15px);
+    }
+
+    90% {
+        transform: translate(0, 0px);
+    }
+
+    95% {
+        transform: translate(0, -5px);
+    }
 }
 
 @keyframes star-spin {
-  0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(720deg);
-	}
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
 }
 
 @keyframes fade-in {
-  0% {
-		opacity: 0;
-  }
-  /* 80% {
+    0% {
+        opacity: 0;
+    }
+
+    /* 80% {
 		opacity: 0.5;
 	} */
-	100% {
-	opacity: 1;
-	}
+    100% {
+        opacity: 1;
+    }
 }
+
 /* MEDIA INQUIRIES */
 @media screen and (max-width:1300px) {
-  .stage{
-    visibility: hidden;
-    margin: 0px auto;
+    .stage {
+        visibility: hidden;
+        margin: 0px auto;
 
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .gamePiece {
-    position: absolute;
-    top: 15px;
- 
-    align-items: center;
-    width: 50%;
-    height: 50%;
-    border-radius: 100%;
-    border: solid 1px black;
-    animation: vert-slide-in 1s;
-  }
-}
-@media screen and (max-width: 700px) {
-  .gamePiece {
-    position: absolute;
-    top: 30px;
-    align-items: center;
-      text-align: center;
-    width: 40%;
-    height: 30%;
-    border-radius: 100%;
-    border: solid 1px black;
-    animation: vert-slide-in 1s;
-  }
+    }
 }
 
 @media screen and (max-width: 920px) {
-  .star {
-    margin: 0px auto;
-    font-size: 1.5rem;
-    text-align: center;
-    color: white;
-    padding: 0.3rem;
-    animation: star-spin 1s;
-  }
+    .gamePiece {
+        position: absolute;
+        top: 15px;
+
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        border-radius: 100%;
+        border: solid 1px black;
+        animation: vert-slide-in 1s;
+    }
 }
+
 @media screen and (max-width: 700px) {
-  .star {
-    margin: 0px auto;
-    font-size: .5rem;
-    text-align: center;
-    color: white;
-    padding-top: 0.3rem;
-    animation: star-spin 1s;
-  }
+    .gamePiece {
+        position: absolute;
+        top: 30px;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+        height: 30%;
+        border-radius: 100%;
+        border: solid 1px black;
+        animation: vert-slide-in 1s;
+    }
 }
 
 @media screen and (max-width: 920px) {
-  #board {
-    max-width: 75%;
-    position: relative;
-    overflow: hidden;
-    border-radius: .5rem;
-    background-color: rgba(0, 0, 0, 0.75);
-  }
+    .star {
+        margin: 0px auto;
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+        padding: 0.3rem;
+        animation: star-spin 1s;
+    }
 }
+
 @media screen and (max-width: 700px) {
-  #board {
-    max-width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: .5rem;
-    background-color: rgba(0, 0, 0, 0.75);
-  }
+    .star {
+        margin: 0px auto;
+        font-size: .5rem;
+        text-align: center;
+        color: white;
+        padding-top: 0.3rem;
+        animation: star-spin 1s;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #board {
+        max-width: 75%;
+        position: relative;
+        overflow: hidden;
+        border-radius: .5rem;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #board {
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: .5rem;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
 }
